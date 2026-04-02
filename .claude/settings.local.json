@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/babiuch/dev/ai -name .* -o -name *)",
+      "Bash(deno --version)",
+      "Bash(npm --version)",
+      "Bash(deno check:*)",
+      "Bash(deno install:*)",
+      "Bash(deno task:*)",
+      "Bash(kill:*)",
+      "Bash(open:*)",
+      "Bash(gh auth:*)"
+    ]
+  }
+}

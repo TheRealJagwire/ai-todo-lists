@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.todo-dragging {
+  opacity: 0.4;
+}
+
+.todo-drag-over {
+  outline: 2px solid #93c5fd;
+  outline-offset: 1px;
+}
+
+.list-dragging {
+  opacity: 0.4;
+}
+
+.list-drag-over {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+main::-webkit-scrollbar {
+  height: 6px;
+}
+main::-webkit-scrollbar-track {
+  background: #030712;
+}
+main::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}

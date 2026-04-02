@@ -1,0 +1,10 @@
+{
+  "workspace": ["./server", "./client"],
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev:server": "deno run --watch --allow-net --allow-read --allow-env server/main.ts",
+    "dev:client": "deno task --cwd client dev",
+    "build:client": "deno task --cwd client build",
+    "start": "DENO_ENV=production deno run --allow-net --allow-read --allow-env server/main.ts"
+  }
+}
