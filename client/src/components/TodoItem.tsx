@@ -34,7 +34,7 @@ export function TodoItem({
       onDragOver={onDragOver}
       onDrop={onDrop}
       onDragEnd={onDragEnd}
-      class="flex items-center gap-3 p-3 bg-gray-800 border border-gray-700 rounded-xl group cursor-grab active:cursor-grabbing hover:border-gray-500 transition-colors"
+      class="flex items-center gap-3 p-3 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-xl group cursor-grab active:cursor-grabbing hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
     >
       <input
         type="checkbox"
@@ -43,7 +43,7 @@ export function TodoItem({
         class="w-4 h-4 accent-blue-500 cursor-pointer flex-none"
       />
       <span
-        class={`flex-1 text-sm ${todo.completed ? "line-through text-gray-500" : "text-gray-100"}`}
+        class={`flex-1 text-sm ${todo.completed ? "line-through text-gray-400 dark:text-gray-500" : "text-gray-800 dark:text-gray-100"}`}
       >
         {todo.text}
       </span>

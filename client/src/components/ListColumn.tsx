@@ -19,14 +19,14 @@ interface Props {
 
 export function ListColumn({ list, onDragStart, onDragEnd }: Props) {
   return (
-    <div class="flex-none w-80 bg-gray-900 rounded-2xl shadow-md p-6 flex flex-col">
+    <div class="flex-none w-80 bg-white dark:bg-gray-900 rounded-2xl shadow-md p-6 flex flex-col">
       <div class="flex items-start justify-between gap-2">
         {/* Drag handle */}
         <div
           draggable
           onDragStart={onDragStart}
           onDragEnd={onDragEnd}
-          class="mt-2 flex-none cursor-grab active:cursor-grabbing text-gray-600 hover:text-gray-400 transition-colors select-none text-lg leading-none"
+          class="mt-2 flex-none cursor-grab active:cursor-grabbing text-gray-400 dark:text-gray-600 hover:text-gray-600 dark:hover:text-gray-400 transition-colors select-none text-lg leading-none"
           title="Drag to reorder"
         >
           ⠿
@@ -39,7 +39,7 @@ export function ListColumn({ list, onDragStart, onDragEnd }: Props) {
         </div>
         <button
           onClick={() => deleteList(list.id)}
-          class="mt-2 flex-none text-gray-600 hover:text-red-400 transition-colors text-base leading-none"
+          class="mt-2 flex-none text-gray-400 dark:text-gray-600 hover:text-red-400 transition-colors text-base leading-none"
           aria-label="Delete list"
           title="Delete list"
         >

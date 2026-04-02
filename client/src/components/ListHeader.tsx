@@ -28,7 +28,7 @@ export function ListHeader({ listName, onRename }: Props) {
   if (editing) {
     return (
       <input
-        class="text-3xl font-bold w-full border-b-2 border-blue-400 outline-none bg-transparent text-gray-100 py-1"
+        class="text-3xl font-bold w-full border-b-2 border-blue-400 outline-none bg-transparent text-gray-900 dark:text-gray-100 py-1"
         value={value}
         onInput={(e) => setValue((e.target as HTMLInputElement).value)}
         onBlur={commit}
@@ -40,7 +40,7 @@ export function ListHeader({ listName, onRename }: Props) {
 
   return (
     <h1
-      class="text-3xl font-bold text-gray-100 cursor-pointer hover:text-blue-400 transition-colors"
+      class="text-3xl font-bold text-gray-900 dark:text-gray-100 cursor-pointer hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
       onClick={startEdit}
       title="Click to rename"
     >
